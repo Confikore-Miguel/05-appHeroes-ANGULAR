@@ -1,0 +1,18 @@
+<div >
+    <h1>¿Está seguro?</h1>
+    <hr>
+    <p>Usted está a punto de eliminar al heroe {{data.superhero}}<br>¿Desea continuar?</p>
+</div>
+<div fxLayout="row" 
+     fxLayoutGap="20px">
+    <button mat-raised-button 
+            color="warn"
+            (click)="borrar()"> 
+        Si, continuar
+    </button>
+
+    <button mat-raised-button 
+            (click)="volver()">
+        No, volver
+    </button>
+</div>
